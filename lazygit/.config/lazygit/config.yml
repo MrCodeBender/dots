@@ -30,11 +30,10 @@ gui:
       - "#db4b4b"
     defaultFgColor:
       - "#c0caf5"
-
 git:
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
   commit:
     signOff: false
   merging:
@@ -42,8 +41,7 @@ git:
     args: ""
   log:
     order: "topo-order"
-    showGraph: "whenMerging"
-
+    showGraph: "when-maximised"
 keybinding:
   universal:
     quit: "q"
@@ -88,7 +86,7 @@ keybinding:
     scrollDownMain: "<pgdn>"
     scrollUpMain-alt1: "K"
     scrollDownMain-alt1: "J"
-    executeCustomCommand: ":"
+    executeShellCommand: ":"
     createRebaseOptionsMenu: "m"
     pushFiles: "P"
     pullFiles: "p"

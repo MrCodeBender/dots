@@ -1,0 +1,8 @@
+# Cursor
+cursor-style = block
+
+# Splits navigation (vim-style, ctrl+alt to avoid conflicts)
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+l=goto_split:right
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+j=goto_split:down

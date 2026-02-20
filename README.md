@@ -11,8 +11,10 @@ dots/
 │   └── .bash_profile
 ├── tmux/
 │   └── .tmux.conf
-└── nvim/
-    └── .config/nvim/init.lua
+├── nvim/
+│   └── .config/nvim/init.lua
+└── ghostty/
+    └── .config/ghostty/config
 ```
 
 ## Instalación
@@ -26,7 +28,7 @@ git clone <url-del-repo> ~/Documents/development/personal/dots
 
 # Activar todas las configs
 cd ~/Documents/development/personal/dots
-stow -t ~ bash tmux nvim
+stow -t ~ bash tmux nvim ghostty
 ```
 
 ---
@@ -39,7 +41,7 @@ stow -t ~ bash tmux nvim
 | `stow -t ~ -D <paquete>` | Eliminar symlinks de un paquete |
 | `stow -t ~ -R <paquete>` | Recrear symlinks (eliminar + crear) |
 | `stow -t ~ --adopt <paquete>` | Adoptar archivos existentes en HOME al repo |
-| `stow -t ~ bash tmux nvim` | Activar varios paquetes a la vez |
+| `stow -t ~ bash tmux nvim ghostty` | Activar varios paquetes a la vez |
 | `stow -t ~ */` | Activar todos los paquetes |
 
 > **Nota:** Todos los comandos se ejecutan desde el directorio raíz del repo (`dots/`).
@@ -124,6 +126,24 @@ Cualquier archivo en `~/.bashrc.d/` se carga automáticamente.
 - Ventanas inician en 1 (no en 0)
 - Historial: 10,000 líneas
 - Sin delay al presionar Esc
+
+---
+
+## Ghostty - Cheatsheet
+
+**Archivo:** `.config/ghostty/config`
+
+### Cursor
+
+- Estilo: bloque (`cursor-style = block`)
+
+### Splits
+
+| Atajo | Acción |
+|---|---|
+| `Ctrl+Shift+e` | Split vertical (derecha) |
+| `Ctrl+Shift+o` | Split horizontal (abajo) |
+| `Ctrl+Alt+h/l/k/j` | Navegar entre splits |
 
 ---
 
